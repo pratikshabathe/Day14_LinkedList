@@ -9,7 +9,7 @@ public class LinkedList {
 	 Node head;
 	    Node tail;
 
-	 /*   public Node  push(int data) {
+	    public Node  push(int data) {
 	        Node newNode = new Node(data);
 	        if (head == null) {
 	            head = newNode;
@@ -20,7 +20,7 @@ public class LinkedList {
 	            newNode.next = temp;
 	        }
 	        return newNode;
-	    }*/
+	    }
 
 	    public void print() {
 	        if (head == null) {
@@ -45,9 +45,9 @@ public class LinkedList {
 	        }
 	    }
 
-	  /*  public void insertInBetween(Node previousNode ,Node newNode){
+	    public void insertInBetween(Node previousNode ,Node newNode){
 	        Node tempNode = previousNode.next;
 	        previousNode.next = newNode;
 	        newNode.next = tempNode;
-	    }*/
+	    }
 }

@@ -2,14 +2,15 @@ package com.blz.linkedlist;
 
 public class Operations {
 
-	// Created a method to add data at end.
-	
-	public static Object[] addDataAtEnd() {
+	public static Object[] insertInBetween() {
 		LinkedList linkedList = new LinkedList();
-	    linkedList.append(56);
-	    linkedList.append(30);
-	    linkedList.append(70);
+	    Node secondNode = linkedList.push(70);
+	    Node firstNode = linkedList.push(56);
+	    Node newNode= new Node(30);
+	    System.out.println("Before:");
 	    linkedList.print();
+	    linkedList.insertInBetween(firstNode, newNode);
+	    System.out.println("after:");
 		return null;
 	}
 }
